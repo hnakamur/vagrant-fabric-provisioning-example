@@ -64,6 +64,9 @@ install_fabric() {
   if [ -z "`pip show fabtools`" ]; then
     pip install fabtools
   fi
+  if [ -z "`pip show jinja2`" ]; then
+    pip install jinja2
+  fi
 }
 
 
